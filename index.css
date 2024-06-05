@@ -32,7 +32,10 @@ body {
 }
 
 #numberInput {
-    border-radius: 10px;
+    border-radius: 20px;
+    width: 42px;
+    height: 22px;
+    text-align: center;
 }
 
 #inputsDiv {
@@ -45,14 +48,66 @@ body {
 
 #inputs {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    align-items: left;
     flex-flow: column wrap;
 }
 
-.input {
+.numInput {
     padding-bottom: 10px;
+    padding-right: 22px;
 }
+
+.togInput {
+    padding-bottom: 15px;
+}
+
 .label {
-    padding-left: 15px;
+    padding-left: 5px;
+}
+
+label {
+    position: relative;
+}
+
+#animateToggle, #hideToggle {
+    display: none;
+}
+
+label input +span::before {
+    position: absolute;
+    content: "";
+    right: 75px;
+    top: 0px;
+    width: 45px;
+    height: 25px;
+    border-radius: 20px;
+    background-color: #DAE6EC;
+    transition: all 0.2s ease-in-out;
+}
+
+label input +span::after {
+    position: absolute;
+    content: "";
+    right: 77px;
+    top: 1.5px;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background-color: #fff;
+    transform: translateX(-20px);
+    transition: all 0.2s ease-in-out;
+}
+
+
+label input:checked +span::before {
+    background-color: #005CFF;
+}
+
+label input:checked +span::after {
+    transform: translateX(1px);
+}
+
+.togInput label {
+    left: 50px;
+    top: 3px;
 }
