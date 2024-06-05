@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Progress Bar</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div id="progressDiv">
+            <div id="progressText">Progress</div>
+            <svg id="circleContainer" height="180" width="180">
+                <circle stroke="#EAF0F6" id="progBarUnder" stroke-width="8" cx="90" cy="90" r="74" fill="transparent"/>
+                <circle stroke="#005CFF" id="progBar" stroke-width="8" cx="90" cy="90" r="74" fill="transparent"/>
+            </svg>
+        </div>
+        <div id="inputsDiv">
+            <div id="inputs">
+                <div class="input"><input id="numberInput" type="number" min="0" max="100"><span class="label">Value</span></div>
+                <div class="input"><input id="animateToggle" type="checkbox"><span class="label">Animate</span></div>
+                <div class="input"><input id="hideToggle" type="checkbox"><span class="label">Hide</span></div>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
