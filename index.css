@@ -8,6 +8,7 @@
     position: absolute;
     padding-right: 320px;
     padding-bottom: 320px;
+    font-size: 22px;
 }
 
 #progBar {
@@ -26,7 +27,7 @@ body {
     justify-content: center;
     position: relative;
     margin: 10px 10px;
-    align-items: center;
+    align-items: stretch;
     height: 100%;
 }
 
@@ -39,11 +40,11 @@ html {
         flex-flow: column wrap;
     }
     #progressDiv {
-        height: 50%;
+        height: 40%;
         width: 100%;
     }
     #inputsDiv {
-        height: 50%;
+        height: 40%;
         width: 100%;
     }
 }
@@ -54,19 +55,20 @@ html {
     }
     #progressDiv {
         height: 100%;
-        width: 50%;
+        width: 40%;
     }
     #inputsDiv {
         height: 100%;
-        width: 50%;
+        width: 40%;
     }
 }
 
 #numberInput {
-    border-radius: 20px;
-    width: 38px;
-    height: 22px;
+    border-radius: 40px;
+    width: 76px;
+    height: 44px;
     text-align: center;
+    font-size: 22px;
 }
 
 #inputsDiv {
@@ -82,12 +84,12 @@ html {
 }
 
 .numInput {
-    padding-bottom: 10px;
-    padding-right: 26px;
+    padding-bottom: 30px;
+    padding-right: 0px;
 }
 
 .togInput {
-    padding-bottom: 15px;
+    padding-bottom: 40px;
 }
 
 .label {
@@ -96,6 +98,8 @@ html {
 
 label {
     position: relative;
+    padding-top: 10px;
+    font-size: 28px;
 }
 
 #animateToggle, #hideToggle {
@@ -107,9 +111,9 @@ label input +span::before {
     content: "";
     right: 75px;
     top: 0px;
-    width: 45px;
-    height: 25px;
-    border-radius: 20px;
+    width: 90px;
+    height: 50px;
+    border-radius: 40px;
     background-color: #DAE6EC;
     transition: all 0.2s ease-in-out;
 }
@@ -118,12 +122,12 @@ label input +span::after {
     position: absolute;
     content: "";
     right: 77px;
-    top: 1.5px;
-    width: 22px;
-    height: 22px;
+    top: 3px;
+    width: 44px;
+    height: 44px;
     border-radius: 50%;
     background-color: #fff;
-    transform: translateX(-20px);
+    transform: translateX(-40px);
     transition: all 0.2s ease-in-out;
 }
 
@@ -137,6 +141,6 @@ label input:checked +span::after {
 }
 
 .togInput label {
-    left: 50px;
-    top: 3px;
+    left: 90px;
+    font-size: 28px;
 }
