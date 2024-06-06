@@ -24,10 +24,14 @@ body {
     background-color: white;
     display: flex;
     justify-content: center;
-    align-items: center;
     position: relative;
-    height: 100%;
     margin: 10px 10px;
+    align-items: center;
+    height: 100%;
+}
+
+html {
+    height: 100%;
 }
 
 @media all and (orientation: portrait) {
